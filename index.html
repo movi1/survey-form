@@ -1,0 +1,90 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML 5 Boilerplate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve </p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input type="name" name="name" id="name" placeholder="Enter your name" required>
+    <br>
+    <label id="email-label" for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+    <br>
+    <div class="row">
+     
+        <label id="number-label" for="number">Number</label>
+      
+      <br>
+      
+        <input type="number" name="number" id="number" min="10" max="100" placeholder="Enter your number" required>
+     
+      </div>
+
+      <br>
+
+      <label for="option">Select an option:</label>
+      <select id="dropdown" name="option" required>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="homemaker">Homemaker</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+      <br>
+      <div class="form-group">
+        <p>How did you hear about us?</p>
+        <label>
+          <input name="user-recomend" value="internet" type="radio" class="input-radio" checked>internet</label>
+        <label>
+          <input name="user-recomend" value="friends" type="radio" class="input-radio">friends</label>
+        <label>
+          <input name="user-recomend" value="other" type="radio" class="input-radio">other</label>
+
+      </div>
+
+      <br>
+      <label for="html"></label>
+      <br>
+      <div class="form-group">
+        <p>
+          What day works best for you?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+        <label>
+          <input name="day" value="Monday" type="checkbox" class="input-checkbox">Monday</label>
+        <label>
+          <input name="day" value="Tuesday" type="checkbox" class="input-checkbox">Tuesday</label>
+        <label>
+          <input name="day" value="Wednesday" type="checkbox" class="input-checkbox">Wednesday</label>
+        <label>
+          <input name="day" value="Thursday" type="checkbox" class="input-checkbox">Thursday</label>
+        <label>
+          <input name="day" value="Friday" type="checkbox" class="input-checkbox">Friday</label>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="Message">Message</label>
+        <br>
+        <textarea id="message" class="input-text-area" name="message" placeholder="Enter your message here"></textarea>
+
+      </div>
+      <br>
+      <div class="form-group">
+        <button type="submit" id="submit" form="nameform" value="Submit">Submit</button>
+      </div>
+
+  </form>
+
+</body>
+
+</html>
